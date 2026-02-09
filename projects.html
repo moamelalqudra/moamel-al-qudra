@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Our Projects | MEP & Technical Portfolio Dubai | Moamel Al Qudra</title>
+    <meta name="description" content="Explore the portfolio of Moamel Al Qudra Electromechanical Works LLC. High-quality Electrical, HVAC, and Plumbing projects completed across Dubai and UAE.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cairo:wght@600&display=swap" rel="stylesheet">
 
+    <style>
+        :root { --navy: #001f54; --gold: #ffcc00; --white: #ffffff; --grey: #f4f4f4; --dark: #1a1a1a; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--white); color: #333; line-height: 1.6; }
+
+        /* Navbar */
+        nav { background: var(--navy); padding: 15px 5%; position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 3px solid var(--gold); display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: var(--gold); font-weight: bold; font-size: 1.2rem; text-decoration: none; text-transform: uppercase; }
+        nav .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; font-size: 0.9rem; }
+
+        /* Projects Hero */
+        .projects-hero { 
+            height: 50vh; 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; margin-top: 60px;
+        }
+        .projects-hero h1 { font-size: 3.5rem; color: var(--gold); }
+        .projects-hero .arabic { font-family: 'Cairo'; font-size: 1.8rem; margin-top: 10px; }
+
+        /* Portfolio Gallery */
+        .portfolio-section { padding: 80px 5%; text-align: center; }
+        .portfolio-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 50px; 
+        }
+
+        .project-card { 
+            position: relative; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            height: 300px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .project-card img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: transform 0.5s ease;
+        }
+
+        .overlay { 
+            position: absolute; 
+            bottom: -100%; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0, 31, 84, 0.9); 
+            color: white; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            transition: bottom 0.4s ease;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project-card:hover .overlay { bottom: 0; }
+        .project-card:hover img { transform: scale(1.1); }
+
+        .overlay h3 { color: var(--gold); font-size: 1.5rem; margin-bottom: 10px; }
+        .overlay p { font-size: 0.9rem; opacity: 0.9; }
+        .tag { background: var(--gold); color: var(--navy); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; margin-bottom: 10px; }
+
+        /* Stats Bar */
+        .stats-bar { background: var(--navy); color: white; padding: 60px 5%; display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center; }
+        .stat-item h2 { font-size: 3rem; color: var(--gold); }
+        .stat-item p { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+
+        /* Footer */
+        footer { text-align: center; background: var(--dark); color: white; padding: 40px; }
+        .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; box-shadow: 2px 2px 20px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .projects-hero h1 { font-size: 2.5rem; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">MOAMEL AL QUDRA</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" style="color: var(--gold);">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header class="projects-hero">
+        <h1>Our Portfolio</h1>
+        <div class="arabic">معرض أعمالنا ومشاريعنا</div>
+        <p style="margin-top: 15px; max-width: 600px; opacity: 0.9;">Showcasing our commitment to quality across Dubai's most demanding MEP and Electromechanical projects.</p>
+    </header>
+
+    <section class="portfolio-section">
+        <h2 style="font-size: 2.5rem; color: var(--navy);">Major Project Highlights</h2>
+        <div style="font-family: 'Cairo'; font-size: 1.5rem; color: #666;">أبرز مشاريعنا المنفذة</div>
+
+        <div class="portfolio-grid">
+            
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800" alt="Electrical Installation">
+                <div class="overlay">
+                    <span class="tag">Electrical</span>
+                    <h3>Luxury Villa Complex</h3>
+                    <p>Full electrical wiring, load scheduling, and DEWA approval for a 10-villa project in Jumeirah.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800" alt="HVAC Project">
+                <div class="overlay">
+                    <span class="tag">HVAC</span>
+                    <h3>Commercial Tower Cooling</h3>
+                    <p>Installation of centralized chiller units and ducting for a 15-story office building in Business Bay.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=800" alt="Plumbing Project">
+                <div class="overlay">
+                    <span class="tag">Plumbing</span>
+                    <h3>Industrial Piping</h3>
+                    <p>High-pressure water network and drainage system for a manufacturing warehouse in DIP.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=800" alt="Maintenace">
+                <div class="overlay">
+                    <span class="tag">Maintenance</span>
+                    <h3>Annual MEP Contract</h3>
+                    <p>Comprehensive yearly maintenance for a retail mall, covering HVAC, Power, and Plumbing.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=800" alt="Control Panels">
+                <div class="overlay">
+                    <span class="tag">Control Systems</span>
+                    <h3>Smart Panel Upgrades</h3>
+                    <p>Modernizing electrical control panels for increased energy efficiency in residential buildings.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=800" alt="Site Work">
+                <div class="overlay">
+                    <span class="tag">Civil/MEP</span>
+                    <h3>Infrastructure Support</h3>
+                    <p>Underground cabling and water line extensions for new community developments.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="stats-bar">
+        <div class="stat-item">
+            <h2>150+</h2>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+            <h2>100%</h2>
+            <p>Client Satisfaction</p>
+        </div>
+        <div class="stat-item">
+            <h2>24/7</h2>
+            <p>Service Availability</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Moamel Al Qudra Electromechanical Works LLC - Project Showcase &copy; 2026</p>
+    </footer>
+
+    <a href="https://wa.me/971564264995" class="wa-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
