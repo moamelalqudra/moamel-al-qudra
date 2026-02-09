@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MEP Services Dubai | Electrical, HVAC & Plumbing | Moamel Al Qudra</title>
+    <meta name="description" content="Moamel Al Qudra offers expert MEP services in Dubai including Electrical wiring, HVAC maintenance, AC installation, and Plumbing solutions. Call 0564264995.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Cairo:wght@600&display=swap" rel="stylesheet">
 
+    <style>
+        :root { --navy: #001f54; --gold: #ffcc00; --white: #ffffff; --grey: #f8f9fa; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--grey); color: #333; line-height: 1.6; }
+
+        /* Navbar (Matches Home) */
+        nav { background: var(--navy); padding: 15px 5%; position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 3px solid var(--gold); display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: var(--gold); font-weight: bold; font-size: 1.2rem; text-decoration: none; text-transform: uppercase; }
+        nav .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; font-size: 0.9rem; }
+
+        /* Services Hero Section */
+        .services-hero { 
+            height: 50vh; 
+            background: linear-gradient(rgba(0,31,84,0.8), rgba(0,31,84,0.8)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; margin-top: 60px;
+        }
+        .services-hero h1 { font-size: 3.5rem; color: var(--gold); }
+        .services-hero .arabic { font-family: 'Cairo'; font-size: 1.8rem; margin-top: 10px; }
+
+        /* Detailed Service Blocks */
+        .service-container { padding: 80px 10%; }
+        .service-row { display: flex; align-items: center; gap: 50px; margin-bottom: 80px; flex-wrap: wrap; }
+        .service-row:nth-child(even) { flex-direction: row-reverse; }
+        
+        .service-image { flex: 1; min-width: 300px; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.15); border: 5px solid white; }
+        .service-image img { width: 100%; height: 400px; object-fit: cover; transition: 0.5s; }
+        .service-image img:hover { transform: scale(1.1); }
+
+        .service-text { flex: 1; min-width: 300px; }
+        .service-text h2 { color: var(--navy); font-size: 2.2rem; margin-bottom: 15px; border-left: 5px solid var(--gold); padding-left: 15px; }
+        .service-text .arabic-sub { font-family: 'Cairo'; font-size: 1.4rem; color: #666; margin-bottom: 20px; }
+        .service-text p { font-size: 1.1rem; color: #555; margin-bottom: 20px; }
+        
+        .service-features { list-style: none; }
+        .service-features li { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; font-weight: bold; color: var(--navy); }
+        .service-features li i { color: var(--gold); }
+
+        /* CTA Section */
+        .cta-box { background: var(--navy); color: white; padding: 60px 5%; text-align: center; border-radius: 20px; margin: 0 5% 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        .btn { padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; font-size: 1.2rem; transition: 0.3s; margin-top: 25px; }
+        .btn-wa { background: #25d366; color: white; }
+        .btn:hover { transform: scale(1.05); filter: brightness(1.1); }
+
+        /* Floating WhatsApp */
+        .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; box-shadow: 2px 2px 20px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .services-hero h1 { font-size: 2.2rem; }
+            .service-row { text-align: center; }
+            .service-text h2 { border-left: none; padding-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">MOAMEL AL QUDRA</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html" style="color: var(--gold);">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header class="services-hero">
+        <h1>Professional MEP Solutions</h1>
+        <div class="arabic">حلول هندسية متكاملة</div>
+        <p style="margin-top: 15px; max-width: 600px; opacity: 0.9;">We provide high-end electromechanical services across Dubai, ensuring safety, quality, and efficiency in every project.</p>
+    </header>
+
+    <div class="service-container">
+        
+        <div class="service-row">
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=1000" alt="Electrical Work Dubai">
+            </div>
+            <div class="service-text">
+                <h2>Electrical Works</h2>
+                <div class="arabic-sub">أعمال الكهرباء والتركيبات</div>
+                <p>From residential wiring to heavy industrial power systems, our DEWA-certified electricians handle everything with precision.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i> Complete Building Wiring</li>
+                    <li><i class="fas fa-check-circle"></i> DB Dressing & Panel Maintenance</li>
+                    <li><i class="fas fa-check-circle"></i> DEWA Approvals & Load Scheduling</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-row">
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000" alt="AC Maintenance Dubai">
+            </div>
+            <div class="service-text">
+                <h2>HVAC & Air Conditioning</h2>
+                <div class="arabic-sub">خدمات التكييف والتهوية</div>
+                <p>Keeping Dubai cool with professional AC installation and maintenance services for villas, offices, and warehouses.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i> Central & Split AC Installation</li>
+                    <li><i class="fas fa-check-circle"></i> Duct Cleaning & Repair</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Emergency AC Repairs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-row">
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=1000" alt="Plumbing Dubai">
+            </div>
+            <div class="service-text">
+                <h2>Plumbing & Sanitation</h2>
+                <div class="arabic-sub">أعمال السباكة والصرف الصحي</div>
+                <p>Modern plumbing solutions for water supply, drainage, and irrigation systems using high-quality materials.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i> Water Tank Cleaning & Repair</li>
+                    <li><i class="fas fa-check-circle"></i> High-Pressure Pipe Fitting</li>
+                    <li><i class="fas fa-check-circle"></i> Sanitary & Bathroom Fitting</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cta-box">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Contact Moamel Al Qudra team today for a free technical consultation.</p>
+        <a href="https://wa.me/971564264995" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+    </div>
+
+    <footer style="text-align: center; background: var(--navy); color: white; padding: 30px;">
+        <p>&copy; 2026 Moamel Al Qudra Electromechanical Works LLC - Dubai</p>
+    </footer>
+
+    <a href="https://wa.me/971564264995" class="wa-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
